@@ -35,6 +35,8 @@ fn main() {
             }
         };
     }
+    let check = 10_000;
+    println!("the value is : {check}");
 
     // let mut x = 10;
     // let r = &mut x;
