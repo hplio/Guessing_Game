@@ -1,4 +1,4 @@
-//NOTE:  gussing program
+// ------------------->  NOTE:  gussing program
 
 use rand::Rng;
 use std::cmp::Ordering;
@@ -37,6 +37,22 @@ fn main() {
     }
     let check = 10_000;
     println!("the value is : {check}");
+    // let x= let y =10; -----------> HACK: NOT SUPPORTED THIS
+
+    let mut counter = 0;
+    let result = loop {
+        counter += 1;
+        if counter == 10 {
+            //HACK: IN BREAK OF LOOP WE CAN ADD SEMICOLONE OR NOT THIS DOESN'T METTER
+            // break counter * 2;
+
+            //INFO:  YOU CAN SEE THIS WE DON'T ADD SEMICOLONE IN THIS BUT THIS DON'T SEMICOLONE IN THIS
+            break counter * 2
+        }
+    };
+    println!("the value of result is : {result}");
+
+    //HACK: THIS IS EXAMPLE OF POINTER
 
     // let mut x = 10;
     // let r = &mut x;
